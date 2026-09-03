@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+User → Browser: The user selects a movie, show time, number of tickets, and clicks Book Ticket. The browser sends an HTTP request to the Java Servlet.
+Browser → Java Servlet: The Servlet receives the booking details such as movie name, show time, seat number, and user information.
+Servlet → Database: The Java Servlet processes the request and sends an SQL query to the database to save the booking and update the available seats.
+Database → Browser: The database returns the result to the Servlet. The Servlet sends an HTTP response back to the browser showing “Ticket Booked Successfully” or an error message.
+
+</body>
+</html>
