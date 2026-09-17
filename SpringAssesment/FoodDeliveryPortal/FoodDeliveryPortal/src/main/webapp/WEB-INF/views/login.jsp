@@ -1,0 +1,1 @@
+<html><head><title>Login</title></head><body><h2>Food Delivery Login</h2><form method="post" action="login">Username: <input name="username"><br><br>Password: <input type="password" name="password"><br><br><button>Login</button></form><% if(request.getParameter("error")!=null){%><p style="color:red">Invalid username or password</p><%}%></body></html>
