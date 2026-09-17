@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+
+  <!-- TASK 1 -->
+
+    <bean id="playlist" class="com.Ex.Playlist">
+        <property name="name" value="My Favourite Songs"/>
+    </bean>
+
+    <bean id="song" class="com.Ex.Song">
+        <property name="title" value="Tum Hi Ho"/>
+        <property name="artist" value="Arijit Singh"/>
+    </bean>
+
+
+  <!-- TASK 2 -->
+
+    <bean id="UserSession"
+          class="com.Ex.UserSession"
+          scope="prototype">
+    </bean>
+
+    <bean id="AppConfig"
+          class="com.Ex.AppConfigs"
+          scope="singleton">
+    </bean>
+
+
+    <!-- TASK 3 -->
+
+    <bean id="DeliveryDetails"
+          class="com.Ex.DeliveryDetails">
+
+        <property name="address"
+                  value="Ahmedabad, Gujarat"/>
+
+    </bean>
+
+    <bean id="FoodOrder"
+          class="com.Ex.FoodOrder"
+          autowire="byName">
+
+        <property name="orderId"
+                  value="ORD101"/>
+
+    </bean>
+    
+    <bean id="NotificationService"
+          class="com.Ex.NotificationService">
+    </bean>
+
+    <bean id="UserProfile"
+          class="com.Ex.UserProfile"
+          autowire="byType">
+    </bean>
+
+
+ <bean id="songRepository"
+          class="com.example.SongRepository">
+    </bean>
+
+  <bean id="songRepository"
+          class="com.example.SongRepository">
+    </bean>
+
+    <bean id="playlistService"
+          class="com.example.PlaylistService">
+
+        <constructor-arg ref="songRepository"/>
+
+    </bean>
+    
+    <bean id="MovieService"
+      class="com.example.MovieService">
+
+    <constructor-arg ref="movieRepository"/>
+
+</bean>
+
+<bean id="MovieService"
+      class="com.example.MovieService">
+
+    <property name="movieRepository"
+              ref="movieRepository"/>
+
+</bean>
+
+
+
+<bean id="paymentGateway"
+      class="com.example.PaymentGatewat">
+</bean>
+
+<bean id="orderService"
+      class="com.example.OrderService">
+
+    <property name="paymentGateway"
+              ref="paymentGateway"/>
+
+</bean>
+</beans>
