@@ -1,0 +1,10 @@
+TASK 3
+
+The program calls:
+https://official-joke-api.appspot.com/random_joke
+
+Jackson maps:
+setup
+punchline
+
+Both fields are printed.

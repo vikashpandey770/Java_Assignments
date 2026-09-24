@@ -1,0 +1,13 @@
+TASK 2
+
+Jackson ObjectMapper converts the JSON response into Java objects.
+
+Example JSON:
+{
+  "slip": {
+    "id": 1,
+    "advice": "Advice text..."
+  }
+}
+
+Only the advice field is printed.

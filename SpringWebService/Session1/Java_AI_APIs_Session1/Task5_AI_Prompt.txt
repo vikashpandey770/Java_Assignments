@@ -1,0 +1,15 @@
+TASK 5 - AI ASSISTANCE DOCUMENTATION
+
+Prompt given to ChatGPT:
+
+"Write simple Java code using OkHttp to call the Google Vertex AI
+generateContent REST API for text generation. Use an environment variable
+for the Google OAuth access token and project ID. Show the POST JSON body
+and print the HTTP status and response."
+
+How I used the output:
+
+1. I used the suggested OkHttp POST request structure.
+2. I changed the model to Gemini 2.5 Flash.
+3. I used environment variables for the access token and project ID.
+4. I kept the REST request simple for learning.

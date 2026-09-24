@@ -1,0 +1,12 @@
+TASK 1 - Maven Project Setup
+
+Create a Maven project.
+
+Dependency:
+com.squareup.okhttp3:okhttp:4.12.0
+
+Java:
+17+
+
+OkHttp is used for HTTP REST GET/POST requests.
+The dependency is already present in pom.xml.

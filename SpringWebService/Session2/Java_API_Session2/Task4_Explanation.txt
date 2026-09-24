@@ -1,0 +1,14 @@
+TASK 4
+
+Reusable generic method:
+
+fetchAndParseJson(String url, Class<T> valueType)
+
+It:
+1. Creates an HttpClient.
+2. Sends GET request.
+3. Checks HTTP status.
+4. Parses JSON using ObjectMapper.
+5. Returns an object of the requested class.
+
+The same method can be reused for different APIs.

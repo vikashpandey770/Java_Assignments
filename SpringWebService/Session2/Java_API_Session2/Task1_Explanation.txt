@@ -1,0 +1,8 @@
+TASK 1
+
+Use Java's built-in java.net.http.HttpClient.
+
+Request:
+GET https://api.adviceslip.com/advice
+
+The complete raw JSON response is printed in the console.
